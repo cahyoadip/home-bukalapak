@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <ss.com.bannerslider.Slider
+                android:id="@+id/banner_slider"
+                android:layout_width="match_parent"
+                android:layout_height="170dp" >
+        </ss.com.bannerslider.Slider>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <TextView
+                    android:text="Kategori Barang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView2"
+                    android:textColor="@android:color/black" android:textSize="18sp"/>
+            <TextView
+                    android:text="Lihat Semua >"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="1"
+                    android:textAlignment="viewEnd"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rv_categories"
+                tools:listitem="@layout/item_categories"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <TextView
+                    android:text="Promo Hari Ini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView4"
+                    android:textColor="@android:color/black" android:textSize="18sp"/>
+            <TextView
+                    android:text="Lihat Semua >"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView5" android:layout_weight="1"
+                    android:textAlignment="viewEnd"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rv_promo" tools:listitem="@layout/item_promo"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <TextView
+                    android:text="Popular Product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView6"
+                    android:textColor="@android:color/black" android:textSize="18sp"/>
+            <TextView
+                    android:text="Lihat Semua >"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView7" android:layout_weight="1"
+                    android:textAlignment="viewEnd"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rv_product" tools:listitem="@layout/item_popular" android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
